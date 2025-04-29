@@ -5,15 +5,18 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { View, Text,Button } from 'react-native';
 import Login from './src/components/Login';
 import Home from './src/components/Home';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 
-const Stack = createStackNavigator();
+// const Stack = createStackNavigator();
+
+const Tab = createBottomTabNavigator();
 
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home">
+      {/* <Stack.Navigator initialRouteName="Home">
         
         
         <Stack.Screen name="Home" component={Home}  options={{
@@ -24,7 +27,17 @@ export default function App() {
   }} />
         <Stack.Screen name="Login" component={Login} />
         
-      </Stack.Navigator>
+      </Stack.Navigator> */}
+
+
+
+<Tab.Navigator>
+      <Tab.Screen name=" Home" component={Home} />
+      <Tab.Screen name="Login" component={Login} />
+    </Tab.Navigator>
+
+
+
     </NavigationContainer>
   );
 }
