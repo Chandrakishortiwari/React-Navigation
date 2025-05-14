@@ -3,15 +3,16 @@ import React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationContainer } from '@react-navigation/native';
 import CustomeDrawer from './CustomeDrawer';
+import Home from './components/Home';
 const Draw = createDrawerNavigator();
 
- const Home = ()=>{
-    return(
-        <View>
-        <Text>home</Text>
-      </View>
-    )
- }
+//  const Home = ()=>{
+//     return(
+//         <View>
+//         <Text>home</Text>
+//       </View>
+//     )
+//  }
 
  const Login = ()=>{
     return(
